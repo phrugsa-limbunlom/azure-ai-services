@@ -22,7 +22,7 @@ To set up the required Azure services, follow these steps:
 - 📦 **Azure Storage**  : *Create a resource → Storage Account*
 - 🤖 **Azure OpenAI**  : *Create a resource → Azure OpenAI*
 - 🗣️ **Azure Language Services**  : *Create a resource → Azure AI Services*
-- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI ServicesCustom vision*
+- 🖼️ **Azure Vision Services**  : *Create a resource → Azure Custom vision*
 - 🏷️ **Azure Custom Vision**  : *Create a resource → Azure Custom vision*
 - 🎤 **Azure Speech Services**  : *Create a resource → Speech Services*
 
