@@ -7,10 +7,10 @@ A collection of AI applications utilizing Azure AI services, including OpenAI, S
 This repository contains various AI-powered functionalities:
 
 - 📄 **RAG with OpenAI** - Implement Retrieval-Augmented Generation (RAG) with document indexing.
+- 🛡️ **Prompt Shield** - Protect content using prompt shielding.
 - 🖼️ **Image Analysis** - Analyze images for insights and detect objects.
 - 🏷️ **Image Classification** - Train and test custom image classification models.
-- 🛡️ **Prompt Shield** - Protect content using prompt shielding.
-- 🎙️ **Speech-to-Text** - Convert speech into text.
+- 🎙️ **Speech To Text** - Convert speech into text.
 - 🌍 **Speech Translation** - Translate spoken language.
 - 📝 **Text Analysis** - Perform sentiment analysis, entity recognition, and text processing.
 
@@ -18,13 +18,54 @@ This repository contains various AI-powered functionalities:
 
 To set up the required Azure services, follow these steps:
 
-- 🔍 **Azure AI Search (Indexing)**  : *Create a resource → AI Search*
+- 🤖 **Azure OpenAI**  : *Create a resource → Azure OpenAI → Collect Key and Endpoint*
+- 🔍 **Azure AI Search (Indexing)**  : *Create a resource → AI Search → Collect Key and Endpoint*
 - 📦 **Azure Storage**  : *Create a resource → Storage Account*
-- 🤖 **Azure OpenAI**  : *Create a resource → Azure OpenAI*
-- 🗣️ **Azure Language Services**  : *Create a resource → Azure AI Services*
-- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI Services*
+- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI Services → Collect Key and Endpoint*
 - 🏷️ **Azure Custom Vision**  : *Create a resource → Azure Custom vision*
-- 🎤 **Azure Speech Services**  : *Create a resource → Speech Services*
+- 🎤 **Azure Speech Services**  : *Create a resource → Speech Services → Collect Key and Endpoint*
+- 🗣️ **Azure Language Services**  : *Create a resource → Azure Language Services → Collect Key and Endpoint*
+
+## Model Deployment
+
+### Custom Image Classification
+
+**Model Training and Deployment**
+1. Go to https://customvision.ai
+2. Create a new project
+3. Add images file
+4. Tag a label
+5. Repeat steps 3 and 4 until add all labels
+6. Click the *Train* button
+7. Review performance metrics
+8. Click the *Performance* tab and the *Publish* button
+
+**Model Testing**
+1. Go to the Custom Vision portal home page
+2. Under *Resource*, find prediction resource (ends with *-Prediction*)
+3. Collect Key and Endpoint
+
+### OpenAI Foundation Models
+
+**Embedding model**
+1. Go to the Azure OpenAI resource
+2. Click the Azure AI Foundry portal
+3. On the Deployment page, create a new base model deployment: *text-embedding-ada-002*
+
+**Large language model**
+1. Go to the Azure OpenAI resource
+2. Click the Azure AI Foundry portal
+3. On the Deployment page, create a new base model deployment: *gpt-35-turbo-16k*
+
+## Indexing
+1. Go to the storage account
+2. Select *Blob containers*
+3. Add a new container
+4. Go to the Azure AI Search resource
+5. Select *Import and vectorize data*
+6. Select *Azure Blob Storage*
+7. On the Vectorize your text page, set *Kind: Azure OpenAI* and *Model deployment: text-embedding-ada-002*
+8. Set index name and then create the index
 
 ## Configuration
 
