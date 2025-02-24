@@ -6,10 +6,10 @@ A collection of AI applications utilizing Azure AI services, including OpenAI, S
 
 This repository contains various AI-powered functionalities:
 
+- 📄 **RAG with OpenAI** - Implement Retrieval-Augmented Generation (RAG) with document indexing.
 - 🖼️ **Image Analysis** - Analyze images for insights and detect objects.
 - 🏷️ **Image Classification** - Train and test custom image classification models.
 - 🛡️ **Prompt Shield** - Protect content using prompt shielding.
-- 📄 **RAG with OpenAI** - Implement Retrieval-Augmented Generation (RAG) with document indexing.
 - 🎙️ **Speech-to-Text** - Convert speech into text.
 - 🌍 **Speech Translation** - Translate spoken language.
 - 📝 **Text Analysis** - Perform sentiment analysis, entity recognition, and text processing.
@@ -18,13 +18,13 @@ This repository contains various AI-powered functionalities:
 
 To set up the required Azure services, follow these steps:
 
-- 🗣️ **Azure Language Services**  : *Create a resource → Azure AI Services*
-- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI ServicesCustom vision*
-- 🖼️ **Azure Custom Vision**  : *Create a resource → Azure Custom vision*
-- 🎤 **Azure Speech Services**  : *Create a resource → Speech Services*
 - 🔍 **Azure AI Search (Indexing)**  : *Create a resource → AI Search*
 - 📦 **Azure Storage**  : *Create a resource → Storage Account*
 - 🤖 **Azure OpenAI**  : *Create a resource → Azure OpenAI*
+- 🗣️ **Azure Language Services**  : *Create a resource → Azure AI Services*
+- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI ServicesCustom vision*
+- 🏷️ **Azure Custom Vision**  : *Create a resource → Azure Custom vision*
+- 🎤 **Azure Speech Services**  : *Create a resource → Speech Services*
 
 ## Configuration
 
