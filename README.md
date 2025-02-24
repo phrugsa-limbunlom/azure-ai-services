@@ -19,7 +19,8 @@ This repository contains various AI-powered functionalities:
 To set up the required Azure services, follow these steps:
 
 - 🗣️ **Azure Language Services**  : *Create a resource → Azure AI Services*
-- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI Services*
+- 🖼️ **Azure Vision Services**  : *Create a resource → Azure AI ServicesCustom vision*
+- 🖼️ **Azure Custom Vision**  : *Create a resource → Azure Custom vision*
 - 🎤 **Azure Speech Services**  : *Create a resource → Speech Services*
 - 🔍 **Azure AI Search (Indexing)**  : *Create a resource → AI Search*
 - 📦 **Azure Storage**  : *Create a resource → Storage Account*
@@ -82,3 +83,7 @@ python {file}
 ```bash
 cd image-analysis
 python image-analysis.py
+```
+
+### Resources
+https://learn.microsoft.com/en-us/training/courses/ai-102t00#course-syllabus
