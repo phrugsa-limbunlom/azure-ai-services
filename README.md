@@ -85,5 +85,5 @@ cd image-analysis
 python image-analysis.py
 ```
 
-### Resources
+## Resources
 https://learn.microsoft.com/en-us/training/courses/ai-102t00#course-syllabus
